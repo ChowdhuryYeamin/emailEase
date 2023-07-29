@@ -1,12 +1,10 @@
-// EmailBodyView.swift
-
 import SwiftUI
 
 struct EmailBodyView: View {
     var emailBody: String
 
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             Text("Body:\n")
                 .font(.headline)
             Text(emailBody)
@@ -19,6 +17,6 @@ struct EmailBodyView: View {
                 )
         }
         .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
     }
 }
-
